@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glade Runner | Гайд по экипировке</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Share+Tech+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1 class="glade-title">Добро пожаловать в Глэйд, Бегун</h1>
+            <p>Готов бросить вызов Лабиринту? Подбери правильную экипировку, чтобы выжить и не стереть ноги о бетонные плиты.</p>
+            <a href="#trial" class="btn-wckd">Найти свою пару</a>
+        </div>
+    </header>
+
+    <section id="trial" class="section trial-section">
+        <div class="container fade-in">
+            <h2 class="section-title">Испытание: Выбор обуви</h2>
+            <p class="section-subtitle">Секторы Лабиринта требуют разного подхода. Выбери свое покрытие.</p>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все маршруты</button>
+                <button class="filter-btn" data-filter="asphalt">Асфальт (Каменные плиты)</button>
+                <button class="filter-btn" data-filter="trail">Трейл (Заросшие секторы)</button>
+            </div>
+
+            <div class="shoe-grid">
+                <div class="shoe-card" data-category="asphalt">
+                    <div class="shoe-img" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="shoe-info">
+                        <h3>Asphalt Glider</h3>
+                        <p class="surface-tag asphalt">Асфальт</p>
+                        <p>Идеальная амортизация для жесткого бетона Лабиринта. Снижает ударную нагрузку на суставы.</p>
+                    </div>
+                </div>
+                <div class="shoe-card" data-category="trail">
+                    <div class="shoe-img" style="background-image: url('https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="shoe-info">
+                        <h3>Moss Tracker</h3>
+                        <p class="surface-tag trail">Трейл / Лес</p>
+                        <p>Агрессивный протектор для сцепления с грязью и лианами. Защита мыска от камней.</p>
+                    </div>
+                </div>
+                <div class="shoe-card" data-category="asphalt">
+                    <div class="shoe-img" style="background-image: url('https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="shoe-info">
+                        <h3>W.C.K.D. Speed</h3>
+                        <p class="surface-tag asphalt">Асфальт</p>
+                        <p>Легкая модель для скоростных побегов от Гриверов по ровным секторам.</p>
+                    </div>
+                </div>
+                <div class="shoe-card" data-category="trail">
+                    <div class="shoe-img" style="background-image: url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="shoe-info">
+                        <h3>ScScorch Survivor</h3>
+                        <p class="surface-tag trail">Трейл / Лес</p>
+                        <p>Максимальная стабилизация стопы на нестабильном грунте внешнего кольца.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kit" class="section kit-section">
+        <div class="container fade-in">
+            <h2 class="section-title">Базовый набор выживания</h2>
+            <div class="kit-layout">
+                <ul class="kit-list">
+                    <li class="kit-item active" data-desc="shoe-desc">
+                        <label><input type="checkbox" checked> <span>Кроссовки (Беговые)</span></label>
+                    </li>
+                    <li class="kit-item" data-desc="socks-desc">
+                        <label><input type="checkbox"> <span>Синтетические носки</span></label>
+                    </li>
+                    <li class="kit-item" data-desc="hrm-desc">
+                        <label><input type="checkbox"> <span>Пульсометр (Трекер W.C.K.D.)</span></label>
+                    </li>
+                    <li class="kit-item" data-desc="shorts-desc">
+                        <label><input type="checkbox"> <span>Беговые шорты / Тайтсы</span></label>
+                    </li>
+                </ul>
+                <div class="kit-description">
+                    <div id="shoe-desc" class="desc-content active">
+                        <h3>Беговые кроссовки</h3>
+                        <p>Твой главный инструмент. Никогда не бегай в кедах или повседневной обуви — колени не простят. Выбирай размер с запасом в 0.5 - 1 см, чтобы не сбить ногти на спусках.</p>
+                    </div>
+                    <div id="socks-desc" class="desc-content">
+                        <h3>Синтетические носки</h3>
+                        <p>Хлопок — смерть для твоих ног. Он накапливает влагу, что приводит к чудовищным мозолям за пару километров. Только синтетика, отводящая пот.</p>
+                    </div>
+                    <div id="hrm-desc" class="desc-content">
+                        <h3>Пульсометр</h3>
+                        <p>Позволяет следить за зонами пульса. Начинающим бегунам нужно проводить 80% времени в легкой зоне (когда можешь спокойно разговаривать на бегу).</p>
+                    </div>
+                    <div id="shorts-desc" class="desc-content">
+                        <h3>Экипировка (Тайтсы)</h3>
+                        <p>Обеспечивают компрессию и защищают бедра от натирания друг об друга. Идеально для длинных вылазок в Лабиринт.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section tips-section">
+        <div class="container fade-in">
+            <h2 class="section-title">Доска объявлений Глэйда</h2>
+            <div class="tips-grid">
+                <div class="tip-card minho">
+                    <div class="tip-header">
+                        <h4>Минхо</h4>
+                        <span class="role">Куратор Бегунов</span>
+                    </div>
+                    <p>«Смотри под ноги, шанк. Не втыкай пятку в бетон — приземляйся на среднюю часть стопы под центром тяжести. Иначе суставы рассыплются быстрее, чем закроются Врата.»</p>
+                </div>
+                <div class="tip-card thomas">
+                    <div class="tip-header">
+                        <h4>Томас</h4>
+                        <span class="role">Бегун</span>
+                    </div>
+                    <p>«Не гонись за скоростью в первый день. Лабиринт требует выносливости. Начни с чередования бега и шага. Твоя задача — привыкнуть к нагрузке.»</p>
+                </div>
+                <div class="tip-card newt">
+                    <div class="tip-header">
+                        <h4>Ньют</h4>
+                        <span class="role">Заместитель лидера</span>
+                    </div>
+                    <p>«Помни, отдых так же важен, как и сам бег. Мышцы растут и адаптируются, когда ты спишь. Не забывай про дни восстановления и растяжку.»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>W.C.K.D. is good. | The Glade Runner Guide © 2026</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
